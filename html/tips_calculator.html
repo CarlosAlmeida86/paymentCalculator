@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tip Calculator</title>
+    <script>
+        function calculateTip() {
+            var bill = document.getElementById("bill").value;
+            var service = document.getElementById("service").value;
+            var people = document.getElementById("people").value;
+            var tip = (bill * service) / people;
+            document.getElementById("tip").innerHTML = tip;
+        }
+    </script>
+</head>
+
+<body>
+<h1>Tip Calculator</h1>
+<form>
+    <label>Bill: $<input type="number" id="bill"></label>
+    <br>
+    <label>Service:
+        <select id="service">
+            <option value=".1">10%</option>
+            <option value=".15">15%</option>
+            <option value=".2">20%</option>
+        </select>
+    </label>
+    <br>
+    <label>Number of People: <input type="number" id="people"></label>
+    <br>
+    <button onclick="calculateTip()">Submit</button>
+    <br>
+    <h2>Tip Information</h2>
+    <label>Monday: <input type="number" id="monday"></label>
+    <label>Tuesday: <input type="number" id="tuesday"></label>
+    <label>Wednesday: <input type="number" id="wednesday"></label>
+    <label>Thursday: <input type="number" id="thursday"></label>
+    <label>Friday: <input type="number" id="friday"></label>
+    <label>Saturday: <input type="number" id="saturday"></label>
+    <label>Sunday: <input type="number" id="sunday"></label>
+    <br>
+    <button onclick="calculateTip()">Submit</button>
+</form>
+<h2>Tip: $<span id="tip"></span></h2>
+</body>
+
+</html>
