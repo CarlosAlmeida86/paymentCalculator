@@ -1,0 +1,107 @@
+/* Style for the footer container */
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for the contact section */
+.contact {
+    flex: 1 0 300px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.contact h3 {
+    margin-top: 0;
+}
+
+.contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+/* Style for the additional information section */
+.info {
+    flex: 1 0 300px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.info h3 {
+    margin-top: 0;
+}
+
+.info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info li {
+    margin-bottom: 10px;
+}
+
+.info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the social media section */
+.social {
+    flex: 1 0 300px;
+    padding: 0;
+}
+
+.social h3 {
+    margin-top: 0;
+}
+
+.social ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    margin-right: 20px;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.social a:hover i {
+    transform: scale(1.2);
+}
+
+.social i {
+    font-size: 24px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
