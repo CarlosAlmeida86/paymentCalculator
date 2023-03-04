@@ -11,7 +11,7 @@ function calculatePayment() {
 
     const totalPayment = (totalDiff / 1000 / 60 / 60) * document.getElementById("payment").value;
     localStorage.setItem("totalPayment", totalPayment);
-    document.getElementById("totalPayment").textContent = totalPayment;
+    document.getElementById("totalPayment").innerText = totalPayment;
 }
 
 function calculateWeeklyHours() {
