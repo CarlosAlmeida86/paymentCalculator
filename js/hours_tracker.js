@@ -22,14 +22,15 @@ function calculateWeeklyHours() {
         for (const day of days) {
             const start = new Date(`1970-01-01 ${document.getElementById(`${day}Start${week}`).value}`);
             const end = new Date(`1970-01-01 ${document.getElementById(`${day}End${week}`).value}`);
-            totalDiff += end - start;
+            totalDiff += parseFloat(end - start);
+            console.log(parseFloat(end - start));
         }
-        const totalHours = totalDiff / 1000 / 60 / 60;
-        console.log(`Week ${week}: ${totalHours} hours`);
+        var totalHours = (totalDiff * 18) / 5;
+      //  console.log(`Week ${week}: ${totalHours} hours`);
+        localStorage.setItem("totalWeeklyHours",totalHours);
         document.getElementById(`week${week}Hours`).innerHTML = `Week ${week}: ${totalHours} hours`;
     }
 }
-
 
 // Reset weeks
 
